@@ -1,0 +1,66 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #3498db;
+}
+
+.card a:hover {
+    color: #2075a0;
+}
+
+.card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #3498db;
+    padding: 8px 16px;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.card .edit-btn {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+.card .delete-btn {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    margin-left: 5px;
+}
+
+.card .edit-btn:hover,
+.card .delete-btn:hover {
+    background-color: #27ae60;
+    border-color: #27ae60;
+    color: #fff;
+}
