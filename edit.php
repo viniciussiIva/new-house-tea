@@ -7,6 +7,8 @@ $id = $_GET['id'];
 $retrieve = $db->retrieve("film/$id");
 $data = json_decode($retrieve, 1);
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -58,11 +60,11 @@ $data = json_decode($retrieve, 1);
 
         .card table td:first-child {
             width: 120px;
-            font-weight: bold;
+        
         }
 
         .card input[type="submit"] {
-            background-color: #4caf50;
+            background-color: #9400d3;
             color: #fff;
             padding: 10px;
             border: none;
@@ -72,24 +74,18 @@ $data = json_decode($retrieve, 1);
     </style>
 </head>
 <body>
-    <div class="card">
+<div class="card">
         <form method="post" action="action_edit.php">
-         <h2>Presentear 🎁</h2>
+            <h2>Presentear 🎁</h2>
+            <?php foreach ($giftedYears as $giftedYear): ?>
+               <div><?php echo $giftedYear; ?></div>
+            <?php endforeach; ?>
             <table>
-                <tr >
-                    <td>Title</td>
-                    <td>:</td>
-                    <td><input type="text" name="title" value="<?php echo $data['title']?>"></td>
-                </tr>
-                <tr >
-                    <td>Thumbnail</td>
-                    <td>:</td>
-                    <td><input type="text" name="thumbnail" value="<?php echo $data['thumbnail']?>"></td>
-                </tr>
                 <tr>
-                    <td>Nome</td>
-                    <td>:</td>
-                    <td><input type="text" name="year" value="<?php echo $data['year']?>"></td>
+                    <td>
+                        <p>Nome:</p>
+                        <input type="text" name="year" value="" placeholder="Digite seu nome">
+                    </td>
                 </tr>
                 <tr>
                     <td>
