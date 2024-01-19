@@ -52,7 +52,7 @@ $db = new firebaseRDB($databaseURL);
     <!-- <a href="add.php"><button>ADD DATA</button></a><br><br> -->
 
     <h1>CHÁ DE CASA NOVA ISA E VINI 👩🏻‍❤️‍👨🏾</h1>
-    <p>Obrigado por fazer parte dessa nova etapa das nossas vidas, vamos sempre lembrar de vocês</p>
+    <p>Obrigado por fazer parte dessa nova etapa das nossas vidas, vamos sempre lembrar de vocês !</p>
     
     <div class="card-container">
         <?php
